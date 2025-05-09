@@ -1,16 +1,19 @@
 {
   "name": "expense-calculator",
   "version": "1.0.0",
-  "description": "Web app to calculate and analyze monthly expenses.",
-  "main": "src/app.js",
+  "description": "Expense calculator with API testing and SQL analysis",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "serve public",
-    "dev": "serve public",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "start": "node app.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:api": "node --experimental-vm-modules node_modules/jest/bin/jest.js api-tests"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "jest": "^29.0.0",
-    "serve": "^14.2.4"
+    "jest": "^29.7.0"
   }
 }
