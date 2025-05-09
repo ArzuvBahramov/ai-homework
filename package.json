@@ -1,0 +1,16 @@
+{
+  "name": "expense-calculator",
+  "version": "1.0.0",
+  "description": "Web app to calculate and analyze monthly expenses.",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "serve public",
+    "dev": "serve public",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "serve": "^14.2.4"
+  }
+}

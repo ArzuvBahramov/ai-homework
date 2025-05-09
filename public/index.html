@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Calculator</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Calculator</h1>
+    <form id="expense-form">
+      <input type="text" id="category" placeholder="Category" required />
+      <input type="number" id="amount" placeholder="Amount ($)" min="0" required />
+      <button type="submit">Add Expense</button>
+    </form>
+    <table id="expenses-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Amount ($)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Expenses will be dynamically inserted here -->
+      </tbody>
+    </table>
+    <button id="calculate-btn">Calculate</button>
+    <section id="results">
+      <h2>Results</h2>
+      <div id="total"></div>
+      <div id="average"></div>
+      <div id="top3"></div>
+    </section>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html> 
